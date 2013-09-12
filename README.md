@@ -11,7 +11,7 @@ API
 =======
 
 ### put()
-Put ANY type of content into this map, even a 'null' or an 'undefined' is acceptable:
+Put any type of content into the map, even a 'null' or an 'undefined' is acceptable:
 
         var map = new FancyMap();
         map.put('a', 1);
