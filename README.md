@@ -16,17 +16,21 @@ Put ANY type of content into this map, even a 'null' or an 'undefined' is accept
         var map = new FancyMap();
         map.put('a', 1);
         map.put('b', 2);
-        map.put('c', 3);
+        map.put('c', null);
+        map.put('d', 'hello');
+        map.put('e', undefined);
         
-        alert(map.size());//alert is 3
+        alert(map.size());//alert is 5
+        alert(map.has('c'));//alert is true
 
-Duplicated key will be replaced by the last one:
+Content with a duplicated key will be replaced by the last one:
 
         var map = new FancyMap();
         map.put('a', 1);
-        map.put('a', 2);
+        map.put('b', 2);
+        map.put('a', 3);
         
-        alert(map.get('a'));//alert is 2
+        alert(map.get('a'));//alert is 3
 
 
 ### get(key)
