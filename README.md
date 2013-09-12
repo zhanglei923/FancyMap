@@ -5,6 +5,7 @@ MIT: [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.
 About
 =======
 FancyMap is a javascript key-value map with sequence query ability and hash access performance.
+Browser Support: IE6+, FF, Chrome, Opera, Safari and more.
 
 
 API
