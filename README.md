@@ -1,4 +1,4 @@
 FancyMap
 ========
 
-A javascript map with both 'hash' and 'sequence' query abilitys.
+FancyMap is a javascript key-value map with sequence orders and fancy performance.
