@@ -1,11 +1,15 @@
 FancyMap
 ========
 
-FancyMap is a javascript key-value map with sequence orders and fancy performance.
 
-LICENSE
+
+License
 =======
 MIT: [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
+
+About
+=======
+FancyMap is a javascript key-value map with orders query ability and hash access performance.
 
 
 API
