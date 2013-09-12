@@ -8,6 +8,7 @@ API
 =======
 
 ### put
+You can put ANY type of value into this map, even a 'null' or an 'undefined'.
 
         var map = new FancyMap();
         
