@@ -11,7 +11,6 @@ API
 Put ANY type of content into this map, even a 'null' or an 'undefined' is acceptable:
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('b', 2);
         map.put('c', 3);
@@ -21,7 +20,6 @@ Put ANY type of content into this map, even a 'null' or an 'undefined' is accept
 Duplicated key will be replaced by the last one:
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('a', 2);
         
@@ -32,7 +30,6 @@ Duplicated key will be replaced by the last one:
 Get content by an assigned key:
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('b', 2);
         
@@ -43,7 +40,6 @@ Get content by an assigned key:
 Get content by order, just as a sequence array:
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('b', 2);
         map.put('c', 3);
@@ -55,7 +51,6 @@ Get content by order, just as a sequence array:
 Return true if key-value exist:
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('b', 2);
         
@@ -67,7 +62,6 @@ Return true if key-value exist:
 Return keys as an array:
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('b', 2);
         map.put('c', 3);
@@ -79,13 +73,11 @@ Return keys as an array:
 Merge another map into current one, if there are duplicated keys, it will be overrided, otherwise it will append as new contents:
 
         var map1 = new FancyMap();
-        
         map1.put('a', 1);
         map1.put('b', 2);
         map1.put('c', 3);
         
         var map2 = new FancyMap();
-        
         map2.put('a', 1);//<--duplicated key
         map2.put('e', 2);
         map2.put('f', 3);
@@ -99,7 +91,6 @@ Merge another map into current one, if there are duplicated keys, it will be ove
 An iterator function instead of for() looping:
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('b', 2);
         map.put('c', 3);
@@ -113,7 +104,6 @@ An iterator function instead of for() looping:
 Return the current size of map, NOTICE that FancyMap will treat ANY type of content as a legal, even is 'null' or 'undefined':
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('A', 'a');
         map.put('c', null);
@@ -127,7 +117,6 @@ Return the current size of map, NOTICE that FancyMap will treat ANY type of cont
 Remove a content by key:
 
         var map = new FancyMap();
-        
         map.put('a', 1);
         map.put('b', 2);
         map.put('c', 3);
@@ -144,7 +133,6 @@ Reset to a blank map.
 Get keys as an array by a given value.
 
         var map = new FancyMap();
-        
         map.put('a', 0);
         map.put('b', 2);
         map.put('c', 0);
@@ -158,7 +146,6 @@ Get keys as an array by a given value.
 or, a plain json object value is also OK:
 
         var map = new FancyMap();
-        
         map.put('a', {first:'zhang', last:'lei', info : {age: 20}});
         map.put('b', {first:'zhang', last:'lei', info : {age: 20}});
         map.put('c', {first:'M', last:'J'});
