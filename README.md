@@ -126,7 +126,7 @@ Remove a content by key:
         alert(map.get('a'));//alert is null
 
 ### clean()
-Reset to a blank map.
+Reset to be a blank map.
 
 
 ### getKeysByVal()
