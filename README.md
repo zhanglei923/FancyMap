@@ -8,7 +8,7 @@ API
 =======
 
 ### put
-------
+
         var map = new FancyMap();
         map.put('a', 1);
         map.put('A', 'a');
