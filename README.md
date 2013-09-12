@@ -9,7 +9,8 @@ FancyMap is a javascript key-value map with sequence query ability and hash acce
 Browser Support: IE6+, FireFox, Chrome, Opera, Safari and more.
 
 How to use:
-Download 'fancymap-latest.min.js' and include it into your page:
+=======
+Download latest fancymap.js and include it into your page:
 
         <script src="/fancymap-latest.min.js"></script>
 
