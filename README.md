@@ -28,7 +28,7 @@ Content with a duplicated key will be replaced by the last one:
         var map = new FancyMap();
         map.put('a', 1);
         map.put('b', 2);
-        map.put('a', 3);
+        map.put('a', 3);//<--duplicate
         
         alert(map.get('a'));//alert is 3
 
