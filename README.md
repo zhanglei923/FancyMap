@@ -38,6 +38,18 @@ Get content by an assigned key:
         
         alert(map.get('b'));//alert is 2
 
+        
+### getByIndex(i)
+Get content by order, just as a sequence array:
+
+        var map = new FancyMap();
+        
+        map.put('a', 1);
+        map.put('b', 2);
+        map.put('c', 3);
+        
+        alert(map.getByIndex(2));//alert is 3
+
 
 ### has(key)
 Return true if key-value exist:
@@ -61,17 +73,6 @@ Return keys as an array:
         map.put('c', 3);
         
         var list = map.getKeys();
-        
-### getByIndex(i)
-Get content by order, just as a sequence array:
-
-        var map = new FancyMap();
-        
-        map.put('a', 1);
-        map.put('b', 2);
-        map.put('c', 3);
-        
-        alert(map.getByIndex(2));//alert is 3
 
 
 ### putAll( map )
