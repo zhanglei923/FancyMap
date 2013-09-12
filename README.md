@@ -7,7 +7,7 @@ FancyMap is a javascript key-value map with sequence orders and fancy performanc
 API
 =======
 
-put
+### put
 ------
         var map = new FancyMap();
         map.put('a', 1);
