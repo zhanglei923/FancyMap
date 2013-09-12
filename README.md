@@ -84,7 +84,7 @@ Return keys as an array:
         var list = map.getKeys();
 
 
-### putAll( map )
+### putAll( map, [override] )
 Merge another map into current one, if there are duplicated keys, it will be overrided, otherwise it will append as new contents:
 
         var map1 = new FancyMap();
@@ -100,7 +100,23 @@ Merge another map into current one, if there are duplicated keys, it will be ove
         map1.putAll(map2);
         
         alert(map2.size());//alert is 5
+        
+'override' is optional, default is 'true', which will override the previous value if there is key confliction.
 
+        var map1 = new FancyMap();
+        map1.put('a', 1);
+        map1.put('b', 2);
+        map1.put('c', 3);
+        	
+        var map2 = new FancyMap();
+        map2.put('A', 11);
+        map2.put('B', 12);
+        map2.put('a', 13);//<--duplicate
+        map2.put('b', 14);//<--duplicate
+        	
+        map1.putAll(map2, false);
+
+        alert(map1.get('a'));//alert is 1, the previous one
 
 ### each(fn)
 An iterator function instead of for() looping:
