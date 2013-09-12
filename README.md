@@ -143,6 +143,17 @@ Remove a content by key:
 ### clean()
 Reset to be a blank map.
 
+### getKeyIdx()
+Get the sequence order of the key:
+
+        var map = new FancyMap();
+        map.put('a', 1);
+        map.put('b', 2);
+        map.put('c', 3);
+        map.put('d', 4);
+        	
+        var i = map.getKeyIdx('c');
+        alert(i);//alert is 2
 
 ### getKeysByVal()
 Get keys as an array by a given value.
