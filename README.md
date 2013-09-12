@@ -11,6 +11,7 @@ API
 You can put ANY type of value into this map, even a 'null' or an 'undefined' is acceptable:
 
         var map = new FancyMap();
+        
         map.put('a', 1);
         map.put('A', 'a');
         map.put('c', null);
@@ -20,19 +21,21 @@ You can put ANY type of value into this map, even a 'null' or an 'undefined' is 
         
         alert(map.size());//alert is 6
 
-content of a duplicated key will be overrided by the last one:
+Duplicated key will be replaced by the last one:
+
         var map = new FancyMap();
+        
         map.put('a', 1);
         map.put('a', 2);
         
         alert(map.get('a'));//alert is 2
 
 
-
-
 ### get()
-Get content by key.
+Get content by an assigned key:
+
         var map = new FancyMap();
+        
         map.put('a', 1);
         map.put('b', 2);
         
@@ -40,8 +43,49 @@ Get content by key.
 
 
 ### has()
+Return true if key-value exist:
+
+        var map = new FancyMap();
+        
+        map.put('a', 1);
+        map.put('b', 2);
+        
+        alert(map.has('b'));//alert is true
+        alert(map.has('c'));//alert is false
+
+
 ### getKeys()
-### addAll()
+Return keys as an array:
+
+        var map = new FancyMap();
+        
+        map.put('a', 1);
+        map.put('b', 2);
+        map.put('c', 3);
+        
+        var list = map.getKeys();
+
+
+### putAll( map )
+Merge another map into current one, if there are duplicated keys, it will be overrided, otherwise it will append as new contents:
+
+        var map1 = new FancyMap();
+        
+        map1.put('a', 1);
+        map1.put('b', 2);
+        map1.put('c', 3);
+        
+        var map2 = new FancyMap();
+        
+        map2.put('a', 1);//<--duplicated key
+        map2.put('e', 2);
+        map2.put('f', 3);
+        
+        map1.putAll(map2);
+        
+        alert(map2.size());//alert is 5
+
+
 ### each()
 ### size()
 ### remove()
