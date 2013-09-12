@@ -64,6 +64,17 @@ Return keys as an array:
         map.put('c', 3);
         
         var list = map.getKeys();
+        
+### getByIndex()
+Get content by order, just as a sequence array:
+
+        var map = new FancyMap();
+        
+        map.put('a', 1);
+        map.put('b', 2);
+        map.put('c', 3);
+        
+        alert(map.getByIndex(2));//alert is 3
 
 
 ### putAll( map )
@@ -87,6 +98,25 @@ Merge another map into current one, if there are duplicated keys, it will be ove
 
 
 ### each()
+
+        var map1 = new FancyMap();
+        
+        map1.put('a', 1);
+        map1.put('b', 2);
+        map1.put('c', 3);
+        
+        var map2 = new FancyMap();
+        
+        map2.put('a', 1);//<--duplicated key
+        map2.put('e', 2);
+        map2.put('f', 3);
+        
+        map1.putAll(map2);
+        
+        alert(map2.size());//alert is 5
+
+
+
 ### size()
 ### remove()
 ### clean()
