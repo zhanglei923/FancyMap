@@ -6,7 +6,7 @@ About
 =======
 FancyMap is a javascript key-value map with sequence query ability and hash access performance.
 
-Browser Support: IE6+, FF, Chrome, Opera, Safari and more.
+Browser Support: IE6+, FireFox, Chrome, Opera, Safari and more.
 
 
 API
