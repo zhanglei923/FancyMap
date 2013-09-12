@@ -4,23 +4,31 @@ FancyMap
 FancyMap is a javascript key-value map with sequence orders and fancy performance.
 
 
-aaaa
+API
 =======
 
-        bbbbb
-        public class HelloWorld {  
-      
-        /**  
-        * @param args  
-        */  
-        public static void main(String[] args) {  
-        System.out.println("HelloWorld!");  
-      
-        }  
-      
-        }
+put
+------
+        var map = new FancyMap();
+        map.put('a', 1);
+        map.put('A', 'a');
+        map.put('c', null);
+        map.put('d', undefined);
+        map.put('e', NaN);
+        map.put('f', {name:'zhanglei'});
 
-aa
+get
+------
+
+has
+------
+
+
+
+
+
+
+
 
 
     大标题  
