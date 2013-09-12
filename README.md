@@ -1,12 +1,14 @@
-License
-=======
-MIT: [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
 
 About
 =======
 FancyMap is a javascript key-value map with sequence query ability and hash access performance.
 
 Browser Support: IE6+, FireFox, Chrome, Opera, Safari and more.
+
+License
+=======
+MIT: [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
+
 
 How to use:
 =======
