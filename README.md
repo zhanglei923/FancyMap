@@ -117,7 +117,7 @@ Merge another map into current one, if there are duplicated keys, it will be ove
         	
         map1.putAll(map2, false);
 
-        alert(map1.get('a'));//alert is 1, the previous one
+        alert(map1.get('a'));//alert is 1, which is the previous one
 
 ### each(fn)
 An iterator function instead of for() looping:
