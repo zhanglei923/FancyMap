@@ -1,4 +1,3 @@
-
 About
 =======
 FancyMap is a javascript key-value map with sequence query ability and hash access performance.
@@ -131,6 +130,22 @@ An iterator function instead of for() looping:
         map.each(function (key, val){
              alert(key+':'+val); //alert is 'a:1', 'b:2', 'c:3'
         });
+        
+you can also break the looping menually by return 'false':
+
+        var map = new FancyMap();
+        map.put('a', 1);
+        map.put('b', 2);
+        map.put('c', 3);
+        map.put('d', 4);
+        var counter = 0;
+        
+        map.each(function(key, val) {
+                if(counter == 2)return false;//return false to break
+                counter++;
+        });
+        alert(counter);//alert is 2
+
 
 
 ### size()
