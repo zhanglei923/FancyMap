@@ -18,6 +18,19 @@ Download latest fancymap.js and include it into your page:
 
 API
 =======
+>[put](blank),
+>[get](blank),
+>[getByIndex](blank),
+>[has](blank),
+>[getKeys](blank),
+>[getKeyIndex](blank),
+>[getKeysByVal](blank),
+>[putAll](blank),
+>[each](blank),
+>[size](blank),
+>[remove](blank),
+>[clean](blank)
+
 
 ### put()
 Put any type of content into the map, even a 'null' or an 'undefined' is acceptable:
@@ -83,7 +96,46 @@ Return keys as an array:
         map.put('c', 3);
         
         var list = map.getKeys();
+        
 
+### getKeyIndex()
+Get the sequence order of the key:
+
+        var map = new FancyMap();
+        map.put('a', 1);
+        map.put('b', 2);
+        map.put('c', 3);
+        map.put('d', 4);
+        	
+        var i = map.getKeyIndex('c');
+        alert(i);//alert is 2
+
+### getKeysByVal()
+Get keys as an array by a given value.
+
+        var map = new FancyMap();
+        map.put('a', 0);
+        map.put('b', 2);
+        map.put('c', 0);
+        map.put('d', 4);
+        map.put('e', 0);
+        
+        var keys = map.getKeysByVal(0);
+        
+        alert(keys.length);//alert is 3
+
+or, a plain json object value is also OK:
+
+        var map = new FancyMap();
+        map.put('a', {first:'zhang', last:'lei', info : {age: 20}});
+        map.put('b', {first:'zhang', last:'lei', info : {age: 20}});
+        map.put('c', {first:'M', last:'J'});
+        map.put('d', {first:'zhang', last:'lei', info : {age: 30}});
+        
+        var val = {first:'zhang', last:'lei', info : {age: 20}}
+        var keys = map.getKeysByVal(val);
+        
+        alert(keys.length);//alert is 2
 
 ### putAll( map, [override] )
 Merge another map into current one, if there are duplicated keys, it will be overrided, otherwise it will append as new contents:
@@ -175,43 +227,3 @@ Remove a content by key:
 
 ### clean()
 Reset to be a blank map.
-
-### getKeyIndex()
-Get the sequence order of the key:
-
-        var map = new FancyMap();
-        map.put('a', 1);
-        map.put('b', 2);
-        map.put('c', 3);
-        map.put('d', 4);
-        	
-        var i = map.getKeyIndex('c');
-        alert(i);//alert is 2
-
-### getKeysByVal()
-Get keys as an array by a given value.
-
-        var map = new FancyMap();
-        map.put('a', 0);
-        map.put('b', 2);
-        map.put('c', 0);
-        map.put('d', 4);
-        map.put('e', 0);
-        
-        var keys = map.getKeysByVal(0);
-        
-        alert(keys.length);//alert is 3
-
-or, a plain json object value is also OK:
-
-        var map = new FancyMap();
-        map.put('a', {first:'zhang', last:'lei', info : {age: 20}});
-        map.put('b', {first:'zhang', last:'lei', info : {age: 20}});
-        map.put('c', {first:'M', last:'J'});
-        map.put('d', {first:'zhang', last:'lei', info : {age: 30}});
-        
-        var val = {first:'zhang', last:'lei', info : {age: 20}}
-        var keys = map.getKeysByVal(val);
-        
-        alert(keys.length);//alert is 2
-
