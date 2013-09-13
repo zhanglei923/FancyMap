@@ -18,21 +18,21 @@ Download latest fancymap.js and include it into your page:
 
 API
 =======
->[put](#fn_put),
->[get](#fn_get),
->[getByIndex](#fn_getByIndex),
->[has](#fn_has),
->[getKeys](#fn_getKeys),
->[getKeyIndex](#fn_getKeyIndex),
->[getKeysByVal](#fn_getKeysByVal),
->[putAll](#fn_putAll),
->[each](#fn_each),
->[size](#fn_size),
->[remove](#fn_remove),
->[clean](#fn_clean)
+>[put](#put),
+>[get](#get),
+>[getByIndex](#getByIndex),
+>[has](#has),
+>[getKeys](#getKeys),
+>[getKeyIndex](#getKeyIndex),
+>[getKeysByVal](#getKeysByVal),
+>[putAll](#putAll),
+>[each](#each),
+>[size](#size),
+>[remove](#remove),
+>[clean](#clean)
 
 
-### put()<span id="fn_put"></span>
+### put()<span id="put"></span>
 Put any type of content into the map, even a 'null' or an 'undefined' is acceptable:
 
         var map = new FancyMap();
@@ -55,7 +55,7 @@ Content with a duplicated key will be replaced by the last one:
         alert(map.get('a'));//alert is 3
 
 
-### get(key)<span id="fn_get"></span>
+### get(key)<span id="get"></span>
 Get content by an assigned key:
 
         var map = new FancyMap();
@@ -65,7 +65,7 @@ Get content by an assigned key:
         alert(map.get('b'));//alert is 2
 
         
-### getByIndex(i)<span id="fn_getByIndex"></span>
+### getByIndex(i)<span id="getByIndex"></span>
 Get content by order, just as a sequence array:
 
         var map = new FancyMap();
@@ -76,7 +76,7 @@ Get content by order, just as a sequence array:
         alert(map.getByIndex(2));//alert is 3
 
 
-### has(key)<span id="fn_has"></span>
+### has(key)<span id="has"></span>
 Return true if key-value exist:
 
         var map = new FancyMap();
@@ -87,7 +87,7 @@ Return true if key-value exist:
         alert(map.has('c'));//alert is false
 
 
-### getKeys()<span id="fn_getKeys"></span>
+### getKeys()<span id="getKeys"></span>
 Return keys as an array:
 
         var map = new FancyMap();
@@ -98,7 +98,7 @@ Return keys as an array:
         var list = map.getKeys();
         
 
-### getKeyIndex()<span id="fn_getKeyIndex"></span>
+### getKeyIndex()<span id="getKeyIndex"></span>
 Get the sequence order of the key:
 
         var map = new FancyMap();
@@ -110,7 +110,7 @@ Get the sequence order of the key:
         var i = map.getKeyIndex('c');
         alert(i);//alert is 2
 
-### getKeysByVal()<span id="fn_getKeysByVal"></span>
+### getKeysByVal()<span id="getKeysByVal"></span>
 Get keys as an array by a given value.
 
         var map = new FancyMap();
@@ -137,7 +137,7 @@ or, a plain json object value is also OK:
         
         alert(keys.length);//alert is 2
 
-### putAll( map, [override] )<span id="fn_putAll"></span>
+### putAll( map, [override] )<span id="putAll"></span>
 Merge another map into current one, if there are duplicated keys, it will be overrided, otherwise it will append as new contents:
 
         var map1 = new FancyMap();
@@ -171,7 +171,7 @@ Merge another map into current one, if there are duplicated keys, it will be ove
 
         alert(map1.get('a'));//alert is 1, which is the previous one
 
-### each(fn)<span id="fn_each"></span>
+### each(fn)<span id="each"></span>
 An iterator function instead of for() looping:
 
         var map = new FancyMap();
@@ -200,7 +200,7 @@ you can also break the looping menually by return 'false':
 
 
 
-### size()<span id="fn_size"></span>
+### size()<span id="size"></span>
 Return the current size of map, NOTICE that FancyMap will treat ANY type of content as a legal, even is 'null' or 'undefined':
 
         var map = new FancyMap();
@@ -213,7 +213,7 @@ Return the current size of map, NOTICE that FancyMap will treat ANY type of cont
         
         alert(map.size());//alert is 6
 
-### remove(key)<span id="fn_remove"></span>
+### <span id="remove">remove(key)</span>
 Remove a content by key:
 
         var map = new FancyMap();
@@ -225,5 +225,5 @@ Remove a content by key:
         
         alert(map.get('a'));//alert is null
 
-### <span id="fn_clean">clean()</span>
+### <span id="clean">clean()</span>
 Reset to be a blank map.
