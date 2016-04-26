@@ -1,6 +1,6 @@
 About
 =======
-FancyMap is a ordered javascript key-value map with sequencing ability and hash performance.
+FancyMap is a ordered javascript key-value Map support looping and high performance of hash querying.
 
 Browser Support: IE6+, FireFox, Chrome, Opera, Safari and more.
 
